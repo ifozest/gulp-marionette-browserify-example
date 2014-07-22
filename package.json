@@ -1,0 +1,33 @@
+{
+  "name": "dataTable",
+  "version": "0.0.1",
+  "main": "app.js",
+  "scripts": {
+    "start": "node ./bin/www"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ifozest/gulp-marionette-browserify-example"
+  },
+  "keywords": [
+    "marionette",
+    "browserify",
+    "gulp"
+  ],
+  "author": "ifozest",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ifozest/gulp-marionette-browserify-example/issues"
+  },
+  "devDependencies": {
+    "express": "~4.6.1",
+    "mongodb": "~1.4.7",
+    "static-favicon": "~1.0.0",
+    "morgan": "~1.0.0",
+    "cookie-parser": "~1.0.1",
+    "body-parser": "~1.0.0",
+    "debug": "~0.7.4",
+    "jade": "~1.3.0",
+    "q": "~1.0.1"
+  }
+}

@@ -1,0 +1,5 @@
+{
+  "name": "database settings",
+  "main": "settings.json",
+  "description": "contains settings for connection to database"
+}

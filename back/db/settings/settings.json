@@ -1,0 +1,7 @@
+{
+  "host": "ds037368.mongolab.com",
+  "port": "37368",
+  "databaseName": "vivik",
+  "login": "test",
+  "password": "test"
+}
