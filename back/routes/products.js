@@ -15,7 +15,7 @@ router.get('/', function (req, res) {
     , sortOrder = +req.query.sortOrder;
 
   if ((!from || from < 0) || (!to || to < 0) || !sortField || !sortOrder || (from > to)) {
-    res.send(500, 'error');
+    res.send(400, 'error');
   }
   from--;
   options = {
@@ -39,7 +39,7 @@ router.get('/', function (req, res) {
       };
       res.send(200, result);
     }).fail(function (err) {
-      res.send(500, err);
+      res.send(400, 'no data');
     });
 });
 
