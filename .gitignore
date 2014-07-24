@@ -1,7 +1,9 @@
 *.idea
 *.iml
 node_modules
-public
+!public/index.html
+!public/styles.css
+public/**/*.js
 bower_components
 vendor
 src/templates/**/*.js

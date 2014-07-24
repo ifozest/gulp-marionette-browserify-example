@@ -10,20 +10,17 @@ router.get('/', function (req, res) {
     , result
     , filter = req.query.filter
     , from = +req.query.from
-    , to = +req.query.to
-    , sortField = req.query.sortField
-    , sortOrder = +req.query.sortOrder;
+    , to = +req.query.to;
 
-  if ((!from || from < 0) || (!to || to < 0) || !sortField || !sortOrder || (from > to)) {
+  //dirty check
+  if ((!from || from < 0) || (!to || to < 0) || (from > to)) {
     res.send(400, 'error');
   }
   from--;
   options = {
     skip: from,
-    limit: to - from,
-    sort: {}
+    limit: to - from
   };
-  options.sort[sortField] = sortOrder;
   if (filter) {
     options.filter = filter;
   }

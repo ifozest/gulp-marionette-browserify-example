@@ -81,4 +81,4 @@ gulp.task('watch', function () {
 
 
 //TODO test, concat + minify js tasks
-gulp.task('test', ['clean', 'jshint', 'minify-html']);
+gulp.task('build-app', ['handlebars', 'browserify']);
