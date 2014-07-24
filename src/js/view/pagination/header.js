@@ -15,9 +15,9 @@ module.exports = Backbone.View.extend({
     var number = +e.target.value;
     if (isNaN(number) || !(parseInt(Number(number)) == number) || number <= 0) {
       e.target.value = 1;
-    } else {
-      this.model.setNumberOnPage(number);
-      this.trigger('refreshProducts');
+      number = 1;
     }
+    this.model.setNumberOnPage(number);
+    this.trigger('refreshProducts');
   }
 });
