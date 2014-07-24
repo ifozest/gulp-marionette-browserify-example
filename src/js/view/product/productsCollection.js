@@ -24,7 +24,7 @@ module.exports = Backbone.View.extend({
     this.$el.append(productView.render().$el);
   },
   renderEmptyCollection: function(){
-    this.$el.append('lol');
+    this.$el.append('here is no data on the server');
   },
   reRender: function(){
     this.$el.empty();
